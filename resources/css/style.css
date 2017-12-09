@@ -1,15 +1,12 @@
-body {
-    font-size: 18px;
-    font-family: Helvetica, sans-serif;
-    line-height: 1.4rem;
-}
-/* Banner and Header */
-.container {
-    width: 960px;
-    margin: auto;
-    position: relative;
+html {
+  font-size: 18px;
+  line-height: 1.4rem;
+  font-family: Helvetica;
 }
 
+body {
+  margin: 0;
+}
 .banner {
     height: 31rem;
     background: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png');
@@ -18,183 +15,222 @@ body {
 }
 
 header {
-    background-color: cadetblue;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-image: url("../images/glasses-bg.png");
+  height: 30rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 1rem;
 }
 
-.logo {
-    display: flex;
-    padding: 1rem 2rem 1rem 0;
+header .flex {
+  justify-content: flex-end;
 }
 
-.logo img {
-    height: 1.5rem;
-    padding-left: 2rem;
-    padding-right: 1rem;
-    display: flex;
-    align-items: center;
-    padding-top: 1rem;
+nav {
+  padding 1rem 0;
+  background-color: cadetblue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-header li {
-    display: inline;
-    padding: 1rem 2rem 0 1rem;
+ul {
+  margin-right: 1rem;
 }
 
-a {
-    color: white;
-    text-decoration: none;
+li {
+  padding: 1rem 2rem;
 }
 
-.mobile {
-    display: none;
+.logo-image {
+  display: flex;
+  align-items: center;
 }
 
-.banner-box {
-    background-color: white;
-    display: inline-block;
-    padding: 1.5rem 5rem;
-    font-size: 2rem;
-    position: relative;
-    top: 10rem;
-    left: 50%;
-    box-sizing: border-box;
+.logo-image img {
+  padding-right: 1rem;
+  padding-left: 2rem;
+  height: 1.5rem;
 }
 
-section.container {
-    display: flex;
-    justify-content: center;
+.menu {
+  display: flex;
+  align-items: center;
 }
 
-section img {
-    height: 3rem;
+.hidden-menu {
+  display: none;
 }
 
-#exam-logo {
-    height: 4.5rem;
+.container {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
-#exam p {
-    margin-top: 1.5rem;
+.flex {
+  display: flex;
 }
 
-/* Section 1 */
-
-.section-1 {
-    text-align: center;
+.banner-text {
+  background-color: white;
+  padding: 1.5rem 5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-top: 10rem;
+  margin-right: -2rem;
 }
 
-.col {
-    margin: 3rem 3rem;
+.qualities {
+  display: flex;
+  justify-content: center;
 }
 
-.section-1 p {
-    margin-top: 3rem;
+.quality {
+  height: 8rem;
+  display: flex;
+  margin: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 }
 
-/* Section 2 */
-
-.section-2 .col {
-    margin-top: 0;
-    margin-right: 5%;
-    width: 35%;
+.paper img {
+  width: 3.5rem;
+  height: auto;
 }
 
-h3 {
-    background-color: cadetblue;
-    color: white;
-    padding: 0.5rem 1.25rem;
-    text-align: center;
-    margin-bottom: 1rem;
-    width: 10rem;
+.ruler img {
+  width: 5rem;
+  height: auto;
 }
 
-/* Footer */
+.truck img {
+  width: 5rem;
+  height: auto;
+}
+
+.business-info {
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  margin-right: 5%;
+  width: 35%
+}
+
+.title {
+  max-width: 10rem;
+  background-color: cadetblue;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
 
 footer {
-    background-color: azure;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+  background-color: azure;
+  max-width: 960px;
+  margin: 5rem auto 0 auto;
 }
 
-footer .logo img {
-    padding-left: 3rem;
-    padding-right: 1rem;
+.black img {
+  padding: 4rem 1rem 4rem 4rem;
+  height: 1.5rem;
 }
 
-/* Media Queries */
-
-@media only screen and (max-width: 1150px) {
-    .container {
-        width: 100%;
-    }
-    .banner {
-        padding-top: 0;
-        background-position: top;
-        height: 22rem;
-    }
-    .banner-box {
-        font-size: 1.33rem;
-        text-align: center;
-        padding: 0.75rem;
-        position: absolute;
-        right: 2rem;
-    }
+.footer {
+  display: flex;
+  align-content: center;
+  align-items: center;
 }
 
-@media only screen and (max-width: 690px) {
-    .desktop {
-        display: none
-    }
-    .mobile {
-        display: inline-block;
-    }
-    .banner {
-        background-position: left;
-        height: 18rem;
-    }
-    .banner-box {
-        top: 9rem;
-        left: 0;
-        margin: 1rem auto;
-        text-align: center;
-        width: 100%;
-        font-size: 1rem;
-    }
-    section.container {
-        flex-direction: column;
-        /*justify-content: center;*/
-        align-items: center;
-        width: 100%;
-        margin: 3rem 0;
-        font-size: 0.77rem;
-    }
-    #exam p, .section-1 p {
-        margin: 1.54rem 0;
-    }
-    .section-2 h3 {
-        width: 100%;
-        text-align: center;
-        box-sizing: border-box;
+@media only screen and (max-width: 1024px) {
+  header {
+    padding-top: 0;
+    height: 22rem;
+  }
+  nav {
+    width: 100%;
+  }
+  .banner-text {
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+  .menu {
+    display: none;
+  }
+  .hidden-menu {
+    display: flex;
+    align-items: center;
+  }
+}
 
-    }
-    .section-2 p {
-        width: 95%;
-        margin: auto;
-        margin-bottom: 4rem;
-    }
-    .section-2 .col {
-        width: 100%;
-        margin: 0;
-    }
-    .col {
-        width: 100%;
-        margin: 0;
-    }
-    footer img {
-        margin: auto;
-    }
+@media only screen and (max-width: 560px) {
+  nav {
+    width: 100%;
+  }
+  .menu {
+    display: none;
+  }
+  .hidden-menu {
+    display: flex;
+    align-items: center;
+  }
+  header {
+    padding-top: 0;
+    height: 17rem;
+  }
+  .banner-text{
+    margin: 9rem 0 auto 0;
+    padding: 1rem auto;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%
+  }
+  .quality {
+    font-size: 0.77rem;
+    margin: 0.77rem auto;
+  }
+  .qualities {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 3.77rem 0;
+  }
+  .business-info {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 0;
+  }
+  .info {
+    width: auto;
+  }
+  .info p {
+    font-size: 0.77rem;
+    margin: 1rem auto 4rem 0.5rem;
+  }
+  .title {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+  }
+  footer {
+    display: flex;
+    margin-top: 0;
+    justify-content: center;
+    width: 100%;
+  }
+  .footer p {
+    display: none;
+  }
 }
