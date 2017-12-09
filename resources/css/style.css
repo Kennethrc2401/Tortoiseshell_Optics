@@ -12,7 +12,7 @@ body {
 
 .banner {
     height: 31rem;
-    background: url("/Users/kennethramirezcastro/Desktop/Projects/Tortoiseshell_Optics/resources/images/glasses-bg.png");
+    background: url('/Users/kennethramirezcastro/Desktop/Projects/Tortoiseshell_Optics/resources/images/glasses-bg.png');
     background-size: cover;
     padding-top: 2rem;
 }
